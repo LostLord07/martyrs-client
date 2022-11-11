@@ -66,6 +66,7 @@ span{margin-left: 15px; font-weight: bold;}
 
 form{
     padding: 20px; display: flex; flex-direction: column; width: 380px;
+    align-items:flex-start;
 }
 input{
     margin-left: 20px; font-family: cursive;
@@ -79,7 +80,35 @@ input{
     outline: none;
     padding-left: 7px;
 }
-.submit{width: 70%;  padding: 3px 0px; margin: auto auto; margin-top:15px ;}
+.submit{
+     width: 60%; 
+     height: 30px;
+     padding: 3px 0px; 
+     margin: auto auto; 
+     margin-top:15px ;
+     border-radius: 7px;
+     border: none;
+     font-size: large;
+     font-weight:300;
+     transition: transform 0.7s;
+    }
+
+.submit:hover{
+        background-color: rgb(42, 42, 42);
+        color: whitesmoke;
+        width: 60%; 
+        height: 30px;
+        padding: 3px 0px; 
+        margin: auto auto; 
+        margin-top:15px ;
+        border-radius: 7px;
+        border: none;
+        font-size: large;
+        font-weight:300;
+        transform: scale(1.05);
+       }
+
+
 label{
     padding: 15px;
 }
@@ -98,6 +127,7 @@ label{
 .form-aside p{
     padding: 5px;
 }
+
 .submit:hover{ cursor: pointer; }
 
 @media(max-width:500px) {

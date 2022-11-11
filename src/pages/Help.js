@@ -98,15 +98,15 @@ export default function Help() {
 
             <div className="help-end">
                 <form id="form" onSubmit={submitdata} method='post' encType="multipart/form-data">
-                    <label >Location:
+                    <label >Name:
                         <input className="form-input" type='text' name="location" placeholder="Location of your Locality" value={data.location} onChange={update} required />
                     </label>
 
-                    <label >Contact:
-                        <input className="form-input" type='number' name="contact" placeholder="+91 93898xxx89" onChange={update} value={data.contact} required />
+                    <label >Place:
+                        <input className="form-input" type='text' name="contact" placeholder="+91 93898xxx89" onChange={update} value={data.contact} required />
                     </label>
 
-                    <label >About:
+                    <label >Article: 
                         <input className="form-input" type='textarea' name="about" value={data.about} placeholder="Additonal information about animal." onChange={update} />
                     </label>
 
@@ -114,7 +114,8 @@ export default function Help() {
                         <input name="image" type='file' className="upload" onChange={update} required />
                     </label>
 
-                    <input type='submit' className="submit" />
+                    {/* <input type='submit' className="submit" /> */}
+                    <button type="submit" className="submit">submit</button>
                 </form>
                 <div className="form-aside">
                     <h2>Help the needy from your Locality.</h2>
