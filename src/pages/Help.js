@@ -98,7 +98,7 @@ export default function Help() {
 
             <div className="help-end">
                 <form id="form" onSubmit={submitdata} method='post' encType="multipart/form-data">
-                    <label>Location
+                    <label>Location:
                         <input type='text' name="location" placeholder="Location of your Locality" value={data.location} onChange={update} required />
                     </label>
 

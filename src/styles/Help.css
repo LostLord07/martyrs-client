@@ -1,5 +1,6 @@
 body{
-    background-color: #F8EDE3;
+    /* background-color: #F8EDE3; */
+    background-image: linear-gradient(to bottom right, rgb(240, 255, 214),rgb(62, 62, 62));
 }
 .help-top{
     width: 500px; margin: auto auto; margin-top: 7em; margin-bottom: 8em;
@@ -18,7 +19,7 @@ span{margin-left: 15px; font-weight: bold;}
     transition: transform .9s;
     /* background-color: rgba(238, 238, 238, 0.893); */
     background-image: linear-gradient(to top left, #ababab,#0000009d);
-    box-shadow: 10px 10px 10px rgb(75 72 72);
+    box-shadow: 5px 5px 15px rgb(75 72 72);
 }
 
 
@@ -30,7 +31,7 @@ span{margin-left: 15px; font-weight: bold;}
     border-radius: 10px;
     /* background-color: rgba(238, 238, 238, 0.893); */
     background-image: linear-gradient(to top left, #323c3728,#b3b3b3);
-    box-shadow: 10px 10px 10px rgb(75 72 72);
+    box-shadow: 7px 7px 15px rgb(75 72 72);
     transform: scale(1.1);
 }
 
