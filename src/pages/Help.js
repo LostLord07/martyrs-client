@@ -11,7 +11,7 @@ export default function Help() {
 
     const fetchData = async () => {
         try {
-            const data = await axios.get('https://safe-stray-life.herokuapp.com/help', {
+            const data = await axios.get('http://localhost:8000/help', {
                 params: {
                     page
                 }
@@ -103,7 +103,7 @@ export default function Help() {
                     </label>
 
                     <label >Place:
-                        <input className="form-input" type='text' name="contact" placeholder="+91 93898xxx89" onChange={update} value={data.contact} required />
+                        <input className="form-input" type='text' name="contact" placeholder="place" onChange={update} value={data.contact} required />
                     </label>
 
                     <label >Article: 
