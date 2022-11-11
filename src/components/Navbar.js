@@ -38,6 +38,7 @@ export default function Navbar() {
                 <Link className='nav-comp' to='/help'>Help</Link>
                 <Link className='nav-comp' to='/volunteer'>Volunteer</Link>
                 <Link className='nav-comp' to='/about'>About</Link>
+                <Link className='nav-comp' to='/post'>Post</Link>
                 <LoginProfile/>
             </div>
             <div className='toggle' onClick={toggle}>

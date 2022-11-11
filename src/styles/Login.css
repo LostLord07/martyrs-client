@@ -16,29 +16,65 @@
 }
 
 .log1{
-    padding-top: 1em; padding-bottom: 40px;
+    padding-top: 1em; 
+    padding-bottom: 40px;
 }
+
+.login{
+background-color:rgba(0, 0, 0, 0.242);
+transition: transform 0.9s;
+}
+
+.login:hover{
+    background-color:rgba(0, 0, 0, 0.703);
+    transform: scale(1.1);
+}
+
+.reg{
+background-color:rgba(0, 0, 0, 0.242);
+transition: transform 0.9s;
+ }
+ 
+.reg:hover{
+    background-color:rgba(0, 0, 0, 0.74);
+transform: scale(1.1);
+}
+
 .login:active{
     background-color: rgb(13, 119, 212);
 }
 .lr{
+    height: 35px;
+    width: 100px;
     padding: 5px 20px; text-decoration: none; font-size: 1em; 
-    border: solid 1px white; margin: 10px; color: whitesmoke;
-    border-radius: 15px;
+    border:none;
+     margin: 10px; 
+     margin-bottom: 0px;
+     color: whitesmoke;
+    border-radius: 14px;
 }
 
 
 .log-form{
     background-color: rgba(0, 0, 0, 0.067); width: 100%;
     padding: 0px; color: aliceblue; position: relative;
-    margin: auto auto; margin-top: 10px;
+    margin: auto auto; margin-top: 0px;
     border-radius: 10px;
+}
+
+.log-form input{
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-left: 7px;
 }
 
 .log-form:hover{
     background-color: rgba(0, 0, 0, 0.067); width: 100%;
     padding: 0px; color: aliceblue; position: relative;
-    margin: auto auto; margin-top: 10px;
+    /* margin: auto auto; margin-top: 10px; */
     border-radius: 10px;
 }
 
@@ -55,10 +91,22 @@
 
 .log-sub{
     position: absolute;
-    width: 200px; margin: auto auto; margin-top: 2em;
-    padding: 2px; font-size: 1em; font-family: cursive;
-    border-radius: 10px; margin-top: 3.5em; 
+    width: 200px; 
+    margin: auto auto; 
+    margin-top: 2em;
+    padding: 2px; 
+    font-size: 1em; 
+    font-family: cursive;
+    border-radius: 10px;
+    margin-top: 3.5em; 
     top: 6em; left: 6em;
+    background-color: rgba(255, 219, 219, 0.811);
+    transition: transform 0.8s;
+}
+
+.log-sub:hover{
+    color:white;
+    background-color: rgb(19, 19, 19);
 }
 
 .reg-sub{

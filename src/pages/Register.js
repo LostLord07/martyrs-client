@@ -18,7 +18,7 @@ export default function Contact() {
     async function login(e) {
         e.preventDefault();
 
-        axios.post('http://localhost:8000/register', { user: data.userName, email: data.email, passwd: data.passwd })
+        axios.post('https://safe-stray-life.herokuapp.com/register', { user: data.userName, email: data.email, passwd: data.passwd })
             .then(res => {
                 if (res.data.status === 'error') alert(res.data.error)
                 else navigate('/login')
@@ -27,7 +27,7 @@ export default function Contact() {
     }
 
     return (
-        <>
+        <div className='login-bg'>
             <div className='log-box'>
                 <div className='log1 reg1'>
                     <Link className='lr login' to='/login'>Login</Link>
@@ -51,6 +51,6 @@ export default function Contact() {
                 </form>
 
             </div>
-        </>
+        </div>
     )
 }

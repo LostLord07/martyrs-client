@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Profile from './pages/Profile'
+import Post from './pages/Post'
 import Editprofile from './pages/Editprofile';
 
 import {Route, Routes} from 'react-router-dom'
@@ -31,6 +32,7 @@ function App() {
         <Route path='/login' element={<Login/>} />
         <Route path='/register' element={<Register/>} />
         <Route path='/profile' element={<Profile/>} />
+        <Route path='/post' element= {<Post/>}/>
         <Route path='/edit-profile' element={<Editprofile/>} />
 
         <Route path='*' element={<Notfound/>}/>

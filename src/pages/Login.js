@@ -36,22 +36,24 @@ export default function Login(){
     return (
         <div className='login-bg'>
         <div className='log-box'>
-            <div><h3>Have an account?</h3></div>
+            <div><h3>Start your journey with us</h3></div>
             <div className='log1'>
-                <Link className='lr login' to='/login'>Login</Link>
-                <Link className='lr reg' to='/register'>Register</Link>
+            <button className='lr login' to='/login'>Login</button>
+            <button className='lr reg' to='/register'>Register</button>
+            {/* <button className='lr reg' to='/register'>HAHA</button> */}
             </div>
             
             <form onSubmit={login} className='log-form' method='post'>
                 <label>
-                    UserName 
-                    <input type='text' name='userName' required value={data.userName} onChange={handleChange}/>
+                    UserName:
+                    <input type='text' name='userName' placeholder='Enter your user name here: ' required value={data.userName} onChange={handleChange}/>
                 </label>
                 <label>
-                    Password
-                    <input type='password' name='passwd' required value={data.passwd} onChange={handleChange}/>
+                    Password:
+                    <input type='password' name='passwd' placeholder='password)' required value={data.passwd} onChange={handleChange}/>
                 </label>
-                <input type='submit' value='Login' className='log-sub'/>
+                {/* <input type='submit' value='Login' className='log-sub'/> */}
+                <button type='submit' value='Login' className='log-sub'>Login</button>
             </form>
         </div>
         </div>
