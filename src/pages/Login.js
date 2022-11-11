@@ -36,6 +36,7 @@ export default function Login(){
     return (
         <div className='login-bg'>
         <div className='log-box'>
+            <div><h3>Have an account?</h3></div>
             <div className='log1'>
                 <Link className='lr login' to='/login'>Login</Link>
                 <Link className='lr reg' to='/register'>Register</Link>
