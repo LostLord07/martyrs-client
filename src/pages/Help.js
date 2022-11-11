@@ -82,9 +82,9 @@ export default function Help() {
     return (
         <>
             <div className="help-top">
-                <h1>Save a Stray.</h1>
-                <p className="quote">Saving one Voiceless will not change the world, but surely for that one,
-                    the world will change forever.</p>
+                <h1>Memory lane.</h1>
+                <p className="quote">Nation thrives on the sacrifices of these immortal. Let's commemorate them and inspire coming generations</p>
+           
             </div>
 
             <div className="all-stray">
@@ -92,23 +92,26 @@ export default function Help() {
             </div>
 
             <div className="page-change" >
-                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLuuHB5g-X20QfRtQkQPzaggBbnCUPu57oHOMG6LQ&s' alt='prev' onClick={prevPage} />
-                <img src='https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/next-icon.png' alt='prev' onClick={nextPage} />
+                {/* <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLuuHB5g-X20QfRtQkQPzaggBbnCUPu57oHOMG6LQ&s' alt='prev' onClick={prevPage} />
+                <img src='https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/next-icon.png' alt='prev' onClick={nextPage} /> */}
+                <button onClick={prevPage}>{'<'}</button>
+                <button onClick={nextPage}>{'>'}</button>
             </div>
 
             <div className="help-end">
                 <form id="form" onSubmit={submitdata} method='post' encType="multipart/form-data">
                     <label >Name:
-                        <input className="form-input" type='text' name="location" placeholder="Location of your Locality" value={data.location} onChange={update} required />
+                        <input className="form-input" type='text' name="location" placeholder="Name of the martyr" value={data.location} onChange={update} required />
                     </label>
 
                     <label >Place:
-                        <input className="form-input" type='text' name="contact" placeholder="+91 93898xxx89" onChange={update} value={data.contact} required />
+                        <input className="form-input" type='text' name="contact" placeholder="e.g Kashmir" onChange={update} value={data.contact} required />
                     </label>
 
-                    <label >Article: 
-                        <input className="form-input" type='textarea' name="about" value={data.about} placeholder="Additonal information about animal." onChange={update} />
+                    <label className="text-area">Article: 
                     </label>
+                    <textarea type='textarea'rows="10" cols="50" name="about" value={data.about}
+                      placeholder="write your post here" onChange={update} />
 
                     <label className="upload">Upload Photo
                         <input name="image" type='file' className="upload" onChange={update} required />
@@ -118,8 +121,8 @@ export default function Help() {
                     <button type="submit" className="submit">submit</button>
                 </form>
                 <div className="form-aside">
-                    <h2>Help the needy from your Locality.</h2>
-                    <p>Upload details of stray animal you see in your surrondings who need any help. Someone from the community will reach out to you via. contact you provide.</p>
+                    <h2>Make our heroes immortal</h2>
+                    <p>Nothing is more valuable to a soldier other than seeing people they protect having respect and gratitude for them. Show your gratitude by showcasing your writings.</p>
                 </div>
             </div>
         </>
