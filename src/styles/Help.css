@@ -1,3 +1,6 @@
+body{
+    background-color: #F8EDE3;
+}
 .help-top{
     width: 500px; margin: auto auto; margin-top: 7em; margin-bottom: 8em;
 }
@@ -8,26 +11,41 @@ span{margin-left: 15px; font-weight: bold;}
 }
 .stray-box{
     border: solid gray 1px;
+    color: white;
+    width: 270px;
+    padding-top: 20px;
+    border-radius: 10px;
+    transition: transform .9s;
+    /* background-color: rgba(238, 238, 238, 0.893); */
+    background-image: linear-gradient(to top left, #ababab,#0000009d);
+    box-shadow: 10px 10px 10px rgb(75 72 72);
+}
+
+
+.stray-box:hover{
+    border: solid gray 1px;
+    color: rgb(22, 22, 22);
     width: 270px;
     padding-top: 20px;
     border-radius: 10px;
     /* background-color: rgba(238, 238, 238, 0.893); */
-    background-image: linear-gradient(to top left, #f8e4e4,#c5c4c4);
+    background-image: linear-gradient(to top left, #323c3728,#b3b3b3);
     box-shadow: 10px 10px 10px rgb(75 72 72);
+    transform: scale(1.1);
 }
 
 .stray-img{
     height: 250px; width: 186.6px; object-fit: cover;
     border-radius: 10px;
     margin-top: 10px;
-    box-shadow: 3px 3px 3px grey;
+    box-shadow: 7px 7px 8px rgb(65, 64, 64);
 }
 .about-stray h3{
     margin-top: 10px; margin-bottom: 0px; 
 }
-.about-stray h5{
-    margin-top: 10px; color: rgb(111, 109, 109);
-}
+/* .about-stray h5{
+    margin-top: 10px; color: rgb(255, 255, 255);
+} */
 .help-end{
     display: flex; flex-flow: row wrap; justify-content: center;
     gap: 7em; padding-bottom: 20px; background-color: rgb(208, 221, 221);
