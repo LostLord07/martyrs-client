@@ -20,7 +20,7 @@ export default function Login(){
     async function login(e){
         e.preventDefault();
     
-        axios.post('http://localhost:8000/login',{ user: data.userName, passwd: data.passwd }) 
+        axios.post('https://safe-stray-life.herokuapp.com/login',{ user: data.userName, passwd: data.passwd }) 
         .then(res => {
             
             if(res.data.status!=='ok') alert(res.data.error)
@@ -34,8 +34,9 @@ export default function Login(){
     }
  
     return (
-        <>
+        <div className='login-bg'>
         <div className='log-box'>
+            <div><h3>Have an account?</h3></div>
             <div className='log1'>
                 <Link className='lr login' to='/login'>Login</Link>
                 <Link className='lr reg' to='/register'>Register</Link>
@@ -53,6 +54,6 @@ export default function Login(){
                 <input type='submit' value='Login' className='log-sub'/>
             </form>
         </div>
-        </>
+        </div>
     )
 }

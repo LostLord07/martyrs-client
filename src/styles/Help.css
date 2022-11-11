@@ -1,5 +1,6 @@
 body{
-    background-color: #F8EDE3;
+    /* background-color: #F8EDE3; */
+    background-image: linear-gradient(to bottom right, rgb(240, 255, 214),rgb(62, 62, 62));
 }
 .help-top{
     width: 500px; margin: auto auto; margin-top: 7em; margin-bottom: 8em;
@@ -18,7 +19,7 @@ span{margin-left: 15px; font-weight: bold;}
     transition: transform .9s;
     /* background-color: rgba(238, 238, 238, 0.893); */
     background-image: linear-gradient(to top left, #ababab,#0000009d);
-    box-shadow: 10px 10px 10px rgb(75 72 72);
+    box-shadow: 5px 5px 15px rgb(75 72 72);
 }
 
 
@@ -30,7 +31,7 @@ span{margin-left: 15px; font-weight: bold;}
     border-radius: 10px;
     /* background-color: rgba(238, 238, 238, 0.893); */
     background-image: linear-gradient(to top left, #323c3728,#b3b3b3);
-    box-shadow: 10px 10px 10px rgb(75 72 72);
+    box-shadow: 7px 7px 15px rgb(75 72 72);
     transform: scale(1.1);
 }
 
@@ -65,11 +66,49 @@ span{margin-left: 15px; font-weight: bold;}
 
 form{
     padding: 20px; display: flex; flex-direction: column; width: 380px;
+    align-items:flex-start;
 }
 input{
     margin-left: 20px; font-family: cursive;
 }
-.submit{width: 70%;  padding: 3px 0px; margin: auto auto; margin-top:15px ;}
+
+.form-input{
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 7px;
+}
+.submit{
+     width: 60%; 
+     height: 30px;
+     padding: 3px 0px; 
+     margin: auto auto; 
+     margin-top:15px ;
+     border-radius: 7px;
+     border: none;
+     font-size: large;
+     font-weight:300;
+     transition: transform 0.7s;
+    }
+
+.submit:hover{
+        background-color: rgb(42, 42, 42);
+        color: whitesmoke;
+        width: 60%; 
+        height: 30px;
+        padding: 3px 0px; 
+        margin: auto auto; 
+        margin-top:15px ;
+        border-radius: 7px;
+        border: none;
+        font-size: large;
+        font-weight:300;
+        transform: scale(1.05);
+       }
+
+
 label{
     padding: 15px;
 }
@@ -88,6 +127,7 @@ label{
 .form-aside p{
     padding: 5px;
 }
+
 .submit:hover{ cursor: pointer; }
 
 @media(max-width:500px) {
