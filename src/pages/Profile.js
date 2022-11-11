@@ -13,6 +13,7 @@ export default function Profile() {
             token: localStorage.getItem('token')
         })
             .then(res => { 
+                 console.log(res.data)
                  setData(res.data)
                  })
             .catch(err => {
@@ -26,8 +27,16 @@ export default function Profile() {
         .catch(err => console.log(err))
     }
 
+    const openPost = (id) =>{
+        console.log('clicked')
+        navigate('/post')
+        axios.get(`http://localhost:8000/post/${id}`)
+        .then(res => console.log(res.data.post))
+        .catch(err => console.log(err))
+    }
+
     const displayData= data.posts.map(datauni => {
-        return <Stray id={datauni._id} key={datauni._id} imgsrc={datauni.img.url} location={datauni.location} contact={datauni.contact} delete={1} handleClick={removeImage}/> 
+        return <Stray id={datauni._id} key={datauni._id} imgsrc={datauni.img.url} location={datauni.location} contact={datauni.contact} delete={1} postClick={openPost}  handleClick={removeImage} /> 
     })
 
     const logOut = () => {
@@ -45,9 +54,6 @@ export default function Profile() {
 
     return(
         <div className='profile'>
-            <img className='be-volunteer' onClick={beVolunteer} src={
-                data.data.volunteer ? 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmVIVmLX9jJ7kKWRX5UXj-AnOI9F0kuWPHoQ&usqp=CAU' : 'https://simg.nicepng.com/png/small/238-2384992_click-here-to-volunteer-volunteer-clip-art.png'
-            } alt='volunteer'/>
             <div className='profile-box'>
                 <img className='profile-img' src={data.data.avatar.url} alt='profile-pic'/>
                 <div className='profile-info'>
@@ -64,7 +70,6 @@ export default function Profile() {
             <div className='break'></div>
             <div className='profile-posts'>
                 <h2>Recent Posts</h2>
-
                 <div className='all-posts'>
                 { data.posts && Object.keys(data.posts).length===0 ? <h4 className='post-msg'>No Posts Uploaded</h4> : displayData}
                 </div>
