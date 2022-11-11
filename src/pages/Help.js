@@ -11,7 +11,7 @@ export default function Help() {
 
     const fetchData = async () => {
         try {
-            const data = await axios.get('http://localhost:8000/help', {
+            const data = await axios.get('https://safe-stray-life.herokuapp.com/help', {
                 params: {
                     page
                 }
